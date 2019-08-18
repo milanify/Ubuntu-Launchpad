@@ -27,7 +27,7 @@ Create an install file that specifies where the files in launchpad-1.0 get insta
 Edit the rules file and add override_dh_usrlocal:
 Edit the control file by changing Section, Homepage, Depends, and Description
 
-Create a folder outside launchpad-1.0 called drag-into-debian-folder
+Create a folder outside launchpad-1.0 called post-dh_make-files
 Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copy+pasted into the generated debian folder
 
 From inside the launchpad-1.0 folder, run debuild -us -uc
