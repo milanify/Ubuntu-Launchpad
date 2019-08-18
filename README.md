@@ -1,7 +1,10 @@
 # Ubuntu-Launchpad
 The Ubuntu version of Apple's/MacOS Launchpad application
 
+# Requirements
+sudo apt install xdotool
 
+# Development Tutorial
 Ran sudo gedit .bashrc
 Added the following to the end of the file: 
 
@@ -21,3 +24,9 @@ Edited the control file by changing Homepage, Depends, and Description
 
 Created a folder outside launchpad-1.0 called drag-into-debian-folder
 Backed up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and can instead be copy+pasted into the generated debian folder
+
+From inside the launchpad-1.0 folder, ran debuild -us -uc
+
+
+# Notes
+Thanks to https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/ for providing a great starting point with regards to packaging shell scripts into deb files
