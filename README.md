@@ -28,13 +28,13 @@ Edit the rules file and add override_dh_usrlocal:
 Edit the control file by changing Section, Homepage, Depends, and Description
 
 Create a folder outside launchpad-1.0 called post-dh_make-files
-Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copy+pasted into the generated debian folder
+Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copied+pasted into the generated debian folder
 
 From inside the launchpad-1.0 folder, run debuild -us -uc
 
-Distribute the generated .deb file as an applcation installer
+Distribute the generated .deb file as an application installer
 
 # Notes
-Thanks to https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/ for providing a great starting point with regards to packaging shell scripts into deb files
+Thanks to https://blog.packagecloud.io/eng/2016/12/15/howto-build-debian-package-containing-simple-shell-scripts/ for providing a great starting point with regard to packaging shell scripts into deb files
 
 Icon made by Pixel Buddha from www.flaticon.com
