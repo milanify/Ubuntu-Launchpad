@@ -2,24 +2,24 @@
 The Ubuntu version of Apple's/MacOS Launchpad application. The shortcut is meant to be placed on a dock as a keyboard-free alternative to pressing Super+A.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png" height="250" width="250">
+  <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png" height="150" width="150">
 </p>
 
 ## Installation
-In Terminal run:
+Install the dependency by opening Terminal and running:
 ```
 sudo apt install xdotool
 ```
 
-[Download the deb file](https://github.com/milan102/Ubuntu-Launchpad/raw/master/launchpad-1.0.deb)
+[Download the deb installer file](https://github.com/milan102/Ubuntu-Launchpad/raw/master/launchpad-1.0.deb)
 
-Open the file and proceed with installation
+Open the deb file and proceed with installation
 
 Open Terminal and run:
 ```
 xdg-open /usr/share/applications
 ```
-or navigate to /usr/share/applications manually
+or navigate to the ```/usr/share/applications``` folder manually
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/applications-folder.png">
@@ -40,10 +40,11 @@ sudo apt install dh-make devscripts
 ```
 
 Then run:
-```sudo gedit .bashrc
+```
+sudo gedit .bashrc
 ```
 
-Add the following to the end of the file:
+Add your information to the end of the file (mine below, I used an URL instead of email):
 ```
 export DEBEMAIL="https://github.com/milan102"
 export DEBFULLNAME="Milan Mishra"
@@ -67,7 +68,8 @@ Create a folder outside launchpad-1.0 called ```post-dh_make-files```
 Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copied+pasted into the generated debian folder
 
 From inside the launchpad-1.0 folder, run:
-```debuild -us -uc
+```
+debuild -us -uc
 ```
 
 Distribute the generated .deb file as an application installer
