@@ -1,0 +1,15 @@
+Source: launchpad
+Section: utils
+Priority: optional
+Maintainer: Milan Mishra <https://github.com/milan102>
+Build-Depends: debhelper (>= 10)
+Standards-Version: 4.1.2
+Homepage: https://github.com/milan102/Ubuntu-Launchpad
+#Vcs-Git: https://anonscm.debian.org/git/collab-maint/launchpad.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/launchpad.git
+
+Package: launchpad
+Architecture: all
+Depends: ${misc:Depends}, xdotool
+Description: Ubuntu launchpad
+ The Ubuntu version of Apple's/MacOS Launchpad application. The shortcut is meant to be placed on a dock as a keyboard-free alternative to pressing Super+A.

@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Name=Launchpad
+Comment=Shows installed Ubuntu applications
+Exec=sh /usr/local/bin/launchpad.sh
+Path=/usr/local/bin
+Icon=launchpad
+Terminal=false

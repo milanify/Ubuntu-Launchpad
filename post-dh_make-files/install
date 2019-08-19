@@ -1,0 +1,3 @@
+launchpad.sh /usr/local/bin
+launchpad.desktop /usr/share/applications
+launchpad.png /usr/share/icons
