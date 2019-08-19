@@ -1,7 +1,7 @@
 # Ubuntu-Launchpad
 The Ubuntu version of Apple's/MacOS Launchpad application. The shortcut is meant to be placed on a dock as a keyboard-free alternative to pressing Super+A.
 
-![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png)
+![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png =250x250)
 
 ## Installation
 In Terminal run:
@@ -25,13 +25,17 @@ Drag the Launchpad icon onto the dock
 
 ![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/dock.png)
 
+Done!
+
 ## Development Tutorial
 In Terminal run:
 ```
 sudo apt install dh-make devscripts
 ```
 
-Run ```sudo gedit .bashrc```
+Then run:
+```sudo gedit .bashrc
+```
 
 Add the following to the end of the file:
 ```
@@ -43,7 +47,7 @@ Create a folder called launchpad-1.0 and place the shell script inside
 - Add a .desktop file and a .png file
 - Edit the .desktop file to Exec where the shell script will be placed and set Path to that folder (more on that below)
 
-From inside the launchpad-1.0 folder, run
+From inside the launchpad-1.0 folder, run:
 ```
 dh_make --indep --createorig --copyright mit
 ```
@@ -56,7 +60,9 @@ Inside the newly generated debian folder:
 Create a folder outside launchpad-1.0 called ```post-dh_make-files```
 Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copied+pasted into the generated debian folder
 
-From inside the launchpad-1.0 folder, run ```debuild -us -uc```
+From inside the launchpad-1.0 folder, run: 
+```debuild -us -uc
+```
 
 Distribute the generated .deb file as an application installer
 
