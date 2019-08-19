@@ -1,7 +1,9 @@
 # Ubuntu-Launchpad
 The Ubuntu version of Apple's/MacOS Launchpad application. The shortcut is meant to be placed on a dock as a keyboard-free alternative to pressing Super+A.
 
-![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png =250x250)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/launchpad-1.0/launchpad.png" height="250" width="250">
+</p>
 
 ## Installation
 In Terminal run:
@@ -19,11 +21,15 @@ xdg-open /usr/share/applications
 ```
 or navigate to /usr/share/applications manually
 
-![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/applications-folder.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/applications-folder.png">
+</p>
 
 Drag the Launchpad icon onto the dock
 
-![alt tag](https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/dock.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/milan102/Ubuntu-Launchpad/master/images/dock.png">
+</p>
 
 Done!
 
@@ -60,7 +66,7 @@ Inside the newly generated debian folder:
 Create a folder outside launchpad-1.0 called ```post-dh_make-files```
 Back up the finalized install, rules, and control files in here so that they don't need to be created on future runs of dh_make and instead can be copied+pasted into the generated debian folder
 
-From inside the launchpad-1.0 folder, run: 
+From inside the launchpad-1.0 folder, run:
 ```debuild -us -uc
 ```
 
