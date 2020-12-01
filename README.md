@@ -33,6 +33,12 @@ Drag the Launchpad icon onto the dock
 
 Done!
 
+
+
+
+
+
+
 ## Development Tutorial
 In Terminal run:
 ```
